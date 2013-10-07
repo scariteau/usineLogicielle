@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>usineLogicielle</groupId>
+  <artifactId>usineLogicielle</artifactId>
+  <version>0.0.1</version>
+      <packaging>jar</packaging>
+    <scm>
+        <developerConnection>scm:git:https://github.com/scariteau/usineLogicielle.git</developerConnection>
+        <connection>scm:git:https://github.com/scariteau/usineLogicielle.git</connection>
+        <url>scm:git:https://github.com/scariteau/usineLogicielle.git</url>
+   		<!-- <connection>scm:git:ssh://git@github.rackspace.com:IX/cloud-files.git</connection>  -->
+   
+      <tag>usineLogicielle-0.0.1</tag>
+  </scm>
+    <distributionManagement>
+        <repository>
+            <id>internal</id>
+            <url>http://localhost:8080/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://localhost:8080/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>       
+     <!--    
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagBase>__HTTP_PATH_TO_SVN__/project-artifactId/tags</tagBase>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+     -->
+    
+</project>
